@@ -1,0 +1,17 @@
+{
+  "name": "hauntedshell",
+  "version": "0.1.0",
+  "description": "A haunted terminal ghost that answers developer questions in a spooky voice.",
+  "type": "module",
+  "bin": {
+    "hauntedshell": "bin/hauntedshell.js",
+    "haunt": "bin/hauntedshell.js"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
