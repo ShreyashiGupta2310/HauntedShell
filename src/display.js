@@ -32,7 +32,7 @@ export async function typeOut(text, { color, delay = 12 } = {}) {
 
 export function printBanner(art, warning) {
   console.log(paint(art, "purple"));
-  console.log(paint("  H A U N T E D S H E L L", "purple"));
+  console.log(paint("  H A U N T E D  S H E L L", "purple"));
   console.log(paint(`  ${warning}`, "dim"));
   console.log();
 }
