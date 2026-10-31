@@ -19,6 +19,21 @@ export const smallTalkReplies = [
     follow_up: "What really happens between typing a URL and seeing the page?",
   },
 ];
+
+export const offTopicReplies = [
+  {
+    text: "That question belongs to the living. I only haunt code.",
+    follow_up: "Tell me instead... what happens to memory when a program forgets to free it?",
+  },
+  {
+    text: "The spirits cannot see that far. My vision ends where the source code does.",
+    follow_up: "What is the difference between a compiler and an interpreter?",
+  },
+  {
+    text: "I wander servers, not kitchens, nor anything else mortal.",
+    follow_up: "Why do two requests sometimes see different data from the same database?",
+  },
+];
 export function pick(list) {
   return list[Math.floor(Math.random() * list.length)];
 }
