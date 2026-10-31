@@ -12,7 +12,7 @@ export async function main(args) {
 
   if (verdict === "empty") {
     printBanner(pick(ghostArts), startupWarning);
-    await typeOut(pick(emptyInputLines), { color: "purple" });
+    await typeOut(pick(emptyInputLines).text, { color: "purple" });
     return;
   }
 
