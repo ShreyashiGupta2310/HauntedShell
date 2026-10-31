@@ -8,7 +8,9 @@
     "haunt": "bin/hauntedshell.js"
   },
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+     "voices": "node scripts/make-voices.js",
+    "voices:list": "node scripts/make-voices.js --list"
   },
   "engines": {
     "node": ">=18"
