@@ -1,0 +1,7 @@
+# Keep Unix line endings in text files. A shebang line (#!/usr/bin/env node)
+# followed by Windows line endings breaks the command on Mac and Linux.
+* text=auto
+*.js text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
