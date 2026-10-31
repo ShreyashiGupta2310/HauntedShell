@@ -16,4 +16,5 @@ export const config = {
   maxQuestionLength: 300,
   timeoutMs: 20000,
   retryDelayMs: 1000,
+  debug: process.env.HAUNTEDSHELL_DEBUG === "1",
 };
