@@ -30,7 +30,7 @@ if (process.platform !== "win32") {
 const soundsDir = fileURLToPath(new URL("../sounds/", import.meta.url));
 mkdirSync(soundsDir, { recursive: true });
 
-const RATE = -3; // -10 is slowest, 10 is fastest. Slower sounds creepier.
+const RATE = -5; // -10 is slowest, 10 is fastest. Slower sounds creepier.
 
 for (const line of allLines) {
   const outFile = `${soundsDir}${line.sound}.wav`.replaceAll("'", "''");
@@ -38,6 +38,7 @@ for (const line of allLines) {
   const script = [
     "Add-Type -AssemblyName System.Speech",
     "$s = New-Object System.Speech.Synthesis.SpeechSynthesizer",
+    "$s.SelectVoice('Microsoft David Desktop')",
     `$s.Rate = ${RATE}`,
     `$s.SetOutputToWaveFile('${outFile}')`,
     `$s.Speak('${words}')`,
